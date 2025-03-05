@@ -1,0 +1,46 @@
+.actionBar {
+  display: flex;
+  gap: 12px;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 480px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: var(--background-error-message);
+
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+}
+
+.errorIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.refreshIcon {
+  width: 26px;
+  height: 26px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}

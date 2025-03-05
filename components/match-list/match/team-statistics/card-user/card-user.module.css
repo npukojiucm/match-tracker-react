@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  height: 52px;
+
+  padding: 0 24px;
+  border-radius: 4px;
+
+  background-color: var(--background-card-user);
+
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.nickname {
+  display: flex;
+  align-items: inherit;
+  gap: 8px;
+
+  width: 100%;
+  height: auto;
+}
+
+.nicknameText {
+  color: var(--color-text-card-user-nickname);
+}
+
+.statistics {
+  display: flex;
+  align-items: inherit;
+  gap: 8px;
+
+  width: auto;
+  height: auto;
+
+  border-radius: 4px;
+
+  text-align: right;
+}
+
+.textLabel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-text-card-user-label);
+}
+
+.textValue {
+  color: var(--color-text-card-user-value);
+}

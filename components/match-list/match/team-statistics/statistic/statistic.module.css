@@ -1,0 +1,30 @@
+.statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+
+  border-radius: 4px;
+
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.statisticLabel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: var(--color-text-card-user-label);
+}
+
+.statisticValue {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-text-card-user-value);
+}

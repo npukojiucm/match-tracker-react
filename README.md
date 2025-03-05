@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Тестовое задание для Frontend-разработчик
 
-## Getting Started
+---
 
-First, run the development server:
+### Компания
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+FTOYD – киберспортивная платформа, которая объединяет десятки
+тысяч игроков, позволяя участвовать в турнирах,
+зарабатывать награды, отслеживать статистику и находить команды для совместной игры.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🚀 Тестовое задание 1
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Разработать простое веб-приложение "Матч-трекер", которое:
+Загружает список матчей с API.
+Показывает названия команд, счет, статус матча.
+Позволяет обновлять данные по нажатию кнопки "Обновить".
+Отображает индикатор загрузки при запросе данных.
+Показывает сообщение об ошибке, если API недоступно.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+💡 Использование Next.js допустимо, но не обязательно. Если вы используете Next.js, то:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Можно применять `getServerSideProps` или `getStaticProps`, если считаете это уместным.
+- Разрешено использовать SWR / React Query для работы с API.
+- НЕ использовать API Routes (`pages/api`), так как серверная часть уже реализована.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+1️⃣   API-запрос
+Загрузить список матчей
+swagger: https://drive.google.com/file/d/1p4Y9-8KL0eCQXh2HZoGgFRK05z_Vz62U/view?usp=sharing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+baseUrl - https://app.ftoyd.com/fronttemp-service
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Ошибка API (если сервер недоступен) должна показывать текст "Ошибка: не удалось загрузить информацию".
+
+2️⃣  UI (Figma)
+Figma макет:
+
+https://www.figma.com/design/W16WfB86EgqtcuuqLCYjgF/Test-assignment?node-id=113-741&t=hBEv4NU9JHRNcUKm-4

@@ -1,25 +1,43 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background-body: #171717;
+  --background-root: #06080c;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background-error-message: #0f1318;
+
+  --background-card: #0b0e12;
+  --background-card-user: #101318;
+
+  --background-divider: #141a21;
+
+  --background-button-default: #eb0237;
+  --background-button-pressed: #a01131;
+  --background-button-disabled: #701328;
+
+  --background-status-live: #43ad28;
+  --background-status-finished: #eb0237;
+  --background-status-prepared: #eb6402;
+
+  --font-tactic-sans: 'Tactic Sans';
+  --font-inter: 'Inter';
+
+  --color-text-primary: #ffffff;
+  --color-text-button-disabled: #787878;
+
+  --color-text-card-user-nickname: #fafafa;
+  --color-text-card-user-label: #fafafa66;
+  --color-text-card-user-value: #f2f6f6;
 }
 
 html,
 body {
-  max-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-body);
+  font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,8 +53,15 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 42px;
+  background-color: var(--background-root);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
 }

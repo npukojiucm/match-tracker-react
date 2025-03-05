@@ -1,0 +1,20 @@
+.labelContainer {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 14px;
+
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text-primary);
+
+  line-height: 19px;
+  letter-spacing: 0;
+}
+
+.svgIcon {
+  width: 48px;
+  height: 48px;
+}
